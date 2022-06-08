@@ -1,0 +1,13 @@
+/* 文字背景色 */
+h4 {
+    background-color:rgb(43, 255, 0);
+    }
+
+h3 {
+    background-color: blue;
+    }
+
+h1 {
+    color: red;
+    font-family: fantasy;
+}

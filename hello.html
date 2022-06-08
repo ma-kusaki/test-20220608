@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<link href="./css/hello.css" rel="stylesheet" type="text/css" media="all">
+<head>
+<title>Hello</title>
+<meta charset="utf-8"></meta>
+</head>
+<body>
+<h3>Hello</h3>
+<h4>This is the test page.</h4>
+<h1>test</h1>
+<!-- <script src="./js/hello.js" charset="utf-8"></script> -->
+<input type="button" value="メッセージ出力" onclick="OnButtonClick()"/>
+<br>
+<div id="text-button">
+    <p id="text">
+        クリック
+    </p>
+</div>
+<p>
+    <label>名前：<input type="text" id="nameText"></label>
+    <input type="button" value="Check" id="checkButton">
+</p>
+<p id="msg"></p>
+</body>
+<script language="javascript" type="text/javascript">
+    function OnButtonClick() {
+        alert("テストページです")
+    };
+
+    document.getElementById("text-button").onclick = function() {
+        document.getElementById("text").innerHTML = "クリックされた！";
+    };
+
+    function butotnClick(){
+         msg.innerText = 'お名前は' + nameText.value + 'さんですね';
+    }
+
+    let nameText = document.getElementById('nameText');
+    nameText.value = '';
+    let msg = document.getElementById('msg');
+
+    let checkButton = document.getElementById('checkButton');
+    checkButton.addEventListener('click', butotnClick);
+</script>
+</html>
